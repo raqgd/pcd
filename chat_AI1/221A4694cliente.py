@@ -28,7 +28,7 @@ class Cliente():
 				self.s.close()
 				sys.exit()
                 
-	def borrarNIck(self, nick):
+	def borrarNick(self, nick):
 		lines = []
 		with open("nickname.txt" , "r") as f:
 			nicknames = f.readlines()
