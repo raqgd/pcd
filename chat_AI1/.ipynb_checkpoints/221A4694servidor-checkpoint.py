@@ -22,6 +22,8 @@ class Servidor():
 			msg = input('\n << SALIR = 1 >> \n')
 			if msg == '1':
 				print(" **** Me piro vampiro; cierro socket y mato SERVER con PID = ", os.getpid())
+				with open("nicknameList.txt", "w") as f:
+					f.write(" ")
 				self.s.close()
 				sys.exit()
 			else: pass
